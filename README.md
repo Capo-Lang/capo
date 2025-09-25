@@ -167,7 +167,12 @@ Similarly, setting an accidental on a note in a bar will automatically set that 
 
 Rests can also omit the `r` value and provide just a duration. `4` is a quarter rest, `8.` is a dotted eighth rest.
 
-When a time signature is set, each bar has an expected amount of beats. Adding extra beats to a measure is allowed, but writing fewer beats than expected will assume the measure is filled with rests.
+When a time signature is set, each bar has an expected amount of beats. Adding extra beats to a measure is allowed, but writing fewer beats than expected will assume the measure is filled with rests. The exception here is when two barlines are separated by only white space or no notes or rests. This will be treated as a single bar line. This allows you to logically separate lines like this:
+
+```
+| 4{c4 d e f | g a b c} |
+| 4{ c b a g | f e d c} |]
+```
 
 One helpful feature of blocks is overriding note attributes. Any attribute (prefix or suffix) defined on a note inside a block will take priority over an attribute outside the block. This means that if you define a block with `4{}` but then put an explicit eighth note in the block, the eighth note will take priority.
 
