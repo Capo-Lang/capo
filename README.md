@@ -147,10 +147,10 @@ $cresc()
 $decresc()
 $dynamic("sfz")
 $ending(1)
-$transpose({| a4 b c d |}, 3)
+$transpose(a4 b c d, 3)
 ```
 
-The last function here uses a special syntax. Anything between `{|` and `|}` is treated as its own instance of Capo code. This syntax is more heavily used in CapoCompose but shows up to pass music to functions in Capo.
+Functions can take 3 types of inputs: strings, numbers, and music. Strings are always double-quoted, and numbers can be integers or floating point, positive or negative. Music is any valid Capo syntax, including nesting functions within functions. The exception here is using the `,` (comma) character. Any note that uses this character must be passed in a block to prevent the function from interpreting it as two separate function parameters.
 
 One thing to note is that functions and variable definitions are determined by the program processing Capo. In CapoCompose, functions and variables are defined or imported before use, therefore the specific use of functions and variables in the examples provided here may differ from actual implementations.
 
