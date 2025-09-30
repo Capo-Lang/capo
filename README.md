@@ -6,7 +6,7 @@
 ## Overview
 Capo is a modern music notation programming language designed for fast, feature-rich, and customizable music entry. It enables musicians to write musical notation using text-based syntax that is both expressive and efficient.
 
-Capo focuses on writing individual musical lines with powerful shorthand notation. For multi-instrument compositions and full scores, see [CapoCompose](github.com/capo-lang/capocompose), which extends Capo with document structure and ensemble management.
+Capo focuses on writing individual musical lines with powerful shorthand notation. For multi-instrument compositions and full scores, see [CapoCompose](http://github.com/capo-lang/capocompose), which extends Capo with document structure and ensemble management.
 ### Design Philosophy
 Capo is designed around several key principles:
 - **Speed -** Minimize keystrokes through intelligent defaults and shorthand notation
