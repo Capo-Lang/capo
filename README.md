@@ -19,6 +19,7 @@ Every note in Capo consists of three parts: \[prefix]\[value]\[suffix]
 - **Prefix -** Duration (4, 8, 16, etc.) with optional dots
 - **Value -** Pitch name (a, b, c, d, e, f, g) or special values like `r` for rests
 - **Suffix -** Modifiers like octave, accidentals, ties, or articulations
+
 _Example:_ `4cs5t.^` breaks down as:
 - `4` = quarter note (prefix)
 - `c` = pitch C (value)
