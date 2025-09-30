@@ -91,7 +91,7 @@ Common articulations have single-character symbols:
 -      // tenuto
 >      // accent
 ^      // marcato
-!      // sccatissimo
+!      // saccatissimo
 *      // fermata
 ~      // trill
 =      // tremolo
